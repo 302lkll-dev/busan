@@ -33,7 +33,7 @@ def index():
     entries = Entry.query.order_by(Entry.date_posted.desc()).all()
     return render_template('index.html', 
                            entries=entries, 
-                           title="충청남도의원 예비후보 전성일",
+                           title="부산진구의원 예비후보 고정민",
                            subtitle="우리 동네 불편한 점을 적어주세요")
 
 @app.route('/add', methods=['POST'])
